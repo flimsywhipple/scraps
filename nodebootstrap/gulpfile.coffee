@@ -61,6 +61,13 @@ gulp.task 'copy', ->
     .pipe($.newer('./public/jquery/'))
     .pipe gulp.dest './public/jquery/'
 
+  gulp.src 'stylesheets/*'
+    .pipe($.newer('./public/stylesheets/'))
+    .pipe gulp.dest './public/stylesheets/'
+
+  gulp.src 'javascripts/*'
+    .pipe($.newer('./public/javascripts/'))
+    .pipe gulp.dest './public/javascripts/'
 # Default task call every tasks created so far.
 #gulp.task 'default', ['css', 'html', 'svg', 'copy']
 gulp.task 'default', ['html', 'copy']
