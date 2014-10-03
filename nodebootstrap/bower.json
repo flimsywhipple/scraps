@@ -1,0 +1,19 @@
+{
+  "name": "nodebootstrap",
+  "version": "0.0.0",
+  "authors": [
+    "sweet caroline <noone@nowhere.net>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
